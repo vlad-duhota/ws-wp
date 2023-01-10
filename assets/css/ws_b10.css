@@ -1,0 +1,20 @@
+.main-block {
+  padding-top: 174px;
+}
+.main-block__img {
+  width: 100%;
+  transform: scale(0.83);
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.main-block__content {
+  max-width: 526px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+.main-block__title {
+  max-width: 464px;
+  margin: 0 auto;
+}/*# sourceMappingURL=ws_b10.css.map */

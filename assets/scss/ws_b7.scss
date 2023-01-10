@@ -1,0 +1,37 @@
+@import 'global/vars';
+
+.investment{
+    @media (min-width: 1099px) {
+        padding-bottom: 120px;
+    }
+    &__cols{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 120px;
+        @media (min-width: 1099px) {
+            margin-bottom: 66px;
+        }
+    }
+    &__block{
+        margin-top: 18px;
+    }
+    &__uptitle{
+        font-size: 20px;
+        margin-bottom: 18px;
+        @media (min-width: 1500px) {
+            font-size: 24px;
+        }
+    }
+    &__end-text{
+        font-family: $titlesFont;
+        font-size: 20px;
+        max-width: 691px;
+        line-height: 120%;
+        @media (min-width: 1500px) {
+            font-size: 24px;
+        }
+        a{
+            color: $primary;
+        }
+    }
+}

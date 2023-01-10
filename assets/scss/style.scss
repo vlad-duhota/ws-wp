@@ -1,0 +1,70 @@
+// global
+@import 'global/vars', 'global/global';
+
+// fonts
+@import 'fonts';
+
+// header && footer
+@import 'common/header', 'common/footer';
+
+// swiper
+// @import '../../node_modules/swiper/swiper.scss';
+
+// common sections
+// @import 
+// 'common/ws_b0',
+// 'common/ws_b1',
+// 'common/ws_b2',
+// 'common/ws_b3',
+// 'common/ws_b4',
+// 'common/ws_b5',
+// 'common/ws_b6',
+// 'common/ws_b7',
+// 'common/ws_b8',
+// 'common/ws_b9',
+// 'common/ws_b10';
+
+// custom cursor
+.cursor {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $primary;
+    transition: all 100ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    visibility: hidden;
+    opacity: 1;
+    z-index: 6;
+    img{
+        transition: transform .5s;
+    }
+    &.left{
+        img{
+            transform: rotate(-180deg);
+        }
+    }
+  }
+
+//   custom scrollbar
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #a8bbbf;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+  

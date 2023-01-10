@@ -1,0 +1,147 @@
+@import 'global/vars';
+
+.team-member{
+    position: relative;
+    &__zone{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        z-index: 4;
+        &_1{
+            left: 0;
+        }
+        &_2{
+            right: 0;
+        }
+    }
+    @media (min-width: 1099px) {
+        padding: 120px 0 120px;
+    }
+
+    &__swiper{
+        position: relative;
+        padding-top: 50px;
+        margin: 0 -40px;
+    }
+    &__slide{
+        display: grid;
+        padding-left: 40px;
+        padding-right: 40px;
+        grid-template-columns: 212px auto;
+        @media (min-width: 1099px) {
+            padding-bottom: 40px;
+        }
+    }
+    &__img{
+        height: 212px;
+        object-fit: cover;
+    }
+    &__text{
+        &-content{
+            letter-spacing: normal;
+            line-height: 150%;
+            font-weight: 500;
+            @media (min-width: 1099px) {
+                padding-right: 115px;
+            }
+            @media (min-width: 1500px) {
+                padding-right: 150px;
+            }
+            position: relative;
+            &::before{
+                content: '';
+                display: block;
+                width: 45.86px;
+                height: 34.8px;
+                top: 0;
+                @media (min-width: 1099px) {
+                    left: -60px;
+                }
+                @media (min-width: 1500px) {
+                    left: -85px;
+                }
+                background: url(../../img/global/quotes.svg) center / cover no-repeat;
+                position: absolute;
+                transform: rotate(180deg);
+                transform-origin: 50% 50%;
+            }
+            &::after{
+                content: '';
+                display: block;
+                width: 45.86px;
+                height: 34.8px;
+                bottom: -4px;
+                right: 22px;
+                background: url(../../img/global/quotes.svg) center / cover no-repeat;
+                position: absolute;
+            }
+            @media (min-width: 1099px) {
+                font-size: 26px;  
+                margin-bottom: 71px;
+            }
+            @media (min-width: 1500px) {
+                font-size: 28px;  
+            }
+        }
+        @media (min-width: 1099px) {
+            padding: 45px 0 0 112px;
+        }
+        @media (min-width: 1500px) {
+            padding: 45px 0 0 174px;
+        }
+    }
+    &__pagination{
+        display: flex;
+        gap: 3px;
+        @media (min-width: 1099px) {
+            padding-left: 361px;
+        }
+        @media (min-width: 1500px) {
+            padding-left: 422px;
+        }
+        span{
+            height: 30px;
+            width: 50px;
+            position: relative;
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                width: 42.83px;
+                height: 4px;
+                background: #BFBFBF;
+                border-radius: 5px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: background .3s;
+            }
+            &.swiper-pagination-bullet-active::before{
+                background: $primary;
+            }
+        }
+    }
+    &__prev, &__next{
+        position: absolute;
+        z-index: 3;
+        @media (min-width: 1099px) {
+            top: 20%;
+        }
+        @media (min-width: 1500px) {
+            top: 0;
+        }
+    }
+    &__prev{
+        left: 346px;
+        transform: rotate(180deg);
+    }
+    &__next{
+        @media (min-width: 1099px) {
+            right: 90px;
+        }
+        @media (min-width: 1500px) {
+            right: 265px;
+        }
+    }
+}

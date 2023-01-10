@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: calc((1vw + 1vh) * 0.602);
+  line-height: 1.5;
+  color: #252654;
+}
+
+h1 {
+  font-size: calc((1vw + 1vh) * 2.15);
+  font-weight: 500;
+  line-height: 135%;
+  margin: 0 0 25px;
+}
+h1 span {
+  font-weight: 300;
+}
+
+h2 {
+  font-size: calc((1vw + 1vh) * 1.548);
+  line-height: 120%;
+  position: relative;
+  margin: 0 0 35px;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 1.5px;
+  background: #FFAC0B;
+  bottom: -8px;
+  left: 0;
+}
+
+h3 {
+  font-size: calc((1vw + 1vh) * 1.032);
+  line-height: 120%;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.v__list_item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 992px) {
+  .h__list {
+    display: flex;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
+  }
+}
+
+.icon_marker {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+.icon_marker svg,
+.icon_marker img {
+  width: 35px;
+  height: auto;
+}
+.icon_marker .text_content {
+  width: calc(100% - (35px + 25px));
+}
+
+.container {
+  width: 1320px;
+  max-width: 100%;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .flex__container {
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  .flex__container_item {
+    flex-grow: 1;
+  }
+}
+
+.flex_elements_line {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 10px;
+  border: 1px solid #FFAC0B;
+  background-color: #FFAC0B;
+  box-shadow: 0px 14px 35px rgba(226, 153, 12, 0.2);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 17px 24px;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  transition: color 0.3s, background-color 0.3s;
+}
+@media (min-width: 1600px) {
+  .btn {
+    font-size: 18px;
+    padding: 14px 32px;
+  }
+}
+.btn:hover {
+  background-color: transparent;
+  color: #FFAC0B;
+}
+.btn.light_btn {
+  background-color: transparent;
+  color: #FFAC0B;
+}
+.btn.light_btn:hover {
+  background-color: #FFAC0B;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0084CA;
+}

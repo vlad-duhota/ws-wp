@@ -1,0 +1,12 @@
+@@if (bg == "true") {
+    <section class="main-block bg">
+    }
+@@if (bg == "false") {
+    <section class="main-block">
+}
+        <div class="main-block__content">
+            <h2 class="main-block__title section-title section-title_centered h1">@@title</h2>
+            <p class="main-block__text laptop-text-small">@@text</p>
+        </div>
+        <img class="main-block__img" src=@@img>
+    </section>

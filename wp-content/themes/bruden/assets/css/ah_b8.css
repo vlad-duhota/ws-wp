@@ -1,0 +1,27 @@
+.ah_b8 {
+  padding: 60px 0;
+}
+@media (min-width: 992px) {
+  .ah_b8 {
+    padding: 120px 0;
+  }
+}
+.ah_b8_faq_list_item {
+  border-bottom: 1px solid rgba(37, 38, 84, 0.12);
+  padding-bottom: 20px;
+  margin-bottom: 26px;
+  cursor: pointer;
+}
+.ah_b8_faq_list_item h3 {
+  margin: 0 0 15px;
+  font-weight: 400;
+}
+.ah_b8_faq_list_item p {
+  margin: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: max-height 0.3s;
+}
+.ah_b8_faq_list_item.open p {
+  max-height: 300px;
+}

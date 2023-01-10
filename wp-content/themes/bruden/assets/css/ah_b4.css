@@ -1,0 +1,39 @@
+.ah_b4 {
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #0084CA;
+  text-align: center;
+  color: #FFFFFF;
+}
+.ah_b4::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 132, 202, 0.75);
+}
+.ah_b4 .flex__container {
+  height: 100%;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ah_b4 h1 span {
+  color: #FFAC0B;
+}
+.ah_b4_list {
+  margin-bottom: 40px;
+}
+.ah_b4_list_item {
+  font-size: calc((1vw + 1vh) * 1.204);
+}
+.ah_b4 p {
+  width: 60%;
+  font-size: calc((1vw + 1vh) * 0.774);
+}

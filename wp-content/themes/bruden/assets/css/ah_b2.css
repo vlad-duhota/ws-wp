@@ -1,0 +1,19 @@
+.ah_b2 {
+  background: url("/wp-content/themes/ahnew/assets/img/monkey-bg.jpeg") center/cover no-repeat #0084CA;
+  color: #ffffff;
+}
+.ah_b2 .flex__container {
+  align-items: center;
+}
+.ah_b2 .flex__container_item .subtitle {
+  font-size: calc((1vw + 1vh) * 0.774);
+}
+.ah_b2 .flex__container_item:last-child {
+  min-height: 45vh;
+  display: flex;
+}
+.ah_b2 .flex__container_item:last-child img {
+  width: 80%;
+  margin: 0 auto;
+  align-self: flex-end;
+}

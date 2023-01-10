@@ -1,0 +1,21 @@
+@import 'global/vars';
+
+.main-block{
+    padding-top: 174px;
+    &__img{
+        width: 100%;
+        transform: scale(.83);;
+        height: 100vh;
+        object-fit: cover;
+        transition: transform .3s ease-in-out;
+    }
+    &__content{
+        max-width: 526px;
+        margin: 0 auto 70px;
+        text-align: center;
+    }
+    &__title{
+        max-width: 464px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,225 @@
+// null styles
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+input:focus-visible::placeholder{
+    font-size: 0;
+}
+
+button{
+    padding: 0;
+}
+// =====================================================================
+
+// titles styles
+.h1{
+    text-transform: capitalize;
+    font-size: $h1Mob;
+    @media (min-width: 1099px) {
+        font-size: $h1Lap;
+    }
+    @media (min-width: 1500px) {
+        font-size: $h1;
+    }
+}
+
+.h2{
+    text-transform: capitalize;
+    font-size: $h2Mob;
+    @media (min-width: 1099px) {
+        font-size: $h2Lap;
+    }
+    @media (min-width: 1500px) {
+        font-size: $h2;
+    }
+}
+
+.h3{
+    font-size: $h3Mob;
+    @media (min-width: 1099px) {
+        font-size: $h3Lap;
+    }
+    @media (min-width: 1500px) {
+        font-size: $h3;
+    }
+}
+
+.h4{
+    font-size: $h4Mob;
+    @media (min-width: 1099px) {
+        font-size: $h4Lap;
+    }
+    @media (min-width: 1500px) {
+        font-size: $h4;
+    }
+}
+
+h1, h2, h3, h4{
+    font-weight: 300;
+    letter-spacing: normal;
+    font-family: $titlesFont;
+    line-height: 135%;
+}
+.section-title{
+    span{
+    font-style: italic;     
+    }
+    &_centered{
+        @media (min-width: 768px) {
+            text-align: center;
+        }
+    }
+}
+// =====================================================================
+
+// text styles
+body{
+    font-size: $mobileFontSize;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: $textColor;
+    font-family: $mainFont;
+    @media (min-width: 1099px) {
+        font-size: $laptopFontSize;
+    }
+    @media (min-width: 1500px) {
+        font-size: $desktopFontSize;
+    }
+}
+
+.laptop-text-small{
+    @media (min-width: 1099px) {
+        font-size: 14px;
+    }
+    @media (min-width: 1500px) {
+        font-size: $desktopFontSize;
+    }
+}
+// =====================================================================
+
+// container
+.container{
+    padding: 0 $containerPadding;
+    margin: 0 auto;
+    @media (min-width: 1099px) {    
+        max-width: $containerWidthLaptop + (2 * $containerPadding);
+    }
+    @media (min-width: 1500px) {    
+        max-width: $containerWidth + (2 * $containerPadding);
+    }
+}
+
+.wrapper{
+    position: relative;
+    overflow: hidden;
+}
+// =====================================================================
+
+// sections
+.section-p{
+    .container{
+        @media (min-width: 1099px) {
+            padding-left: 110px !important;
+            padding-right: 110px !important;
+        }
+        @media (min-width: 1500px) {
+            padding-left: 83px !important;
+            padding-right: 83px !important;
+        }
+    }
+}
+.section-p-desktop{
+    .container{
+        @media (min-width: 1500px) {
+            padding-left: 83px !important;
+            padding-right: 83px !important;
+        }
+    }
+}
+section.bg{
+    background: $grey2;
+}
+// =====================================================================
+
+// buttons
+// btn icon
+.btn-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $textColor;
+    font-weight: 600;
+    text-transform: capitalize;
+    span{
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.24), 0px 0px 8px rgba(0, 0, 0, 0.12);
+        width: 40px;
+        height: 40px;
+        background: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background .3s;
+        position: relative;
+        overflow: hidden;
+    }
+    img{
+        transform: translateX(50%);
+        right: 50%;
+        position: absolute;
+    }
+    &:hover span{
+        background: $primaryLight;
+        img{
+            animation: hover 1.2s ease-in-out forwards;
+        }
+    }
+    &_light{
+            color: #fff;
+    }
+}
+@keyframes hover {
+    0%{
+        right: 50%;
+    }
+    25%{
+        right: -20px;
+    }
+    75%{
+        right: unset;
+        left: -20px;
+    }
+    100%{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+// =====================================================================
+
+// btn icon in slider
+.btn-icon-circle{
+    width: 40px;
+    height: 40px;
+    background: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background .3s;
+    &:hover{
+        background: $primaryLight;
+    }
+}
+// =====================================================================

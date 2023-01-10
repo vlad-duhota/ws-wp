@@ -1,0 +1,45 @@
+@import 'global/vars';
+
+.key-sectors{
+    @media (min-width: 1099px) {
+        padding: 92px 0;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    &__col{
+        &_1{ 
+            @media (min-width: 1099px) {
+                flex: 0 0 371px;
+            }
+        }
+        &_2{
+            @media (min-width: 1099px) {
+                flex: 1 1 100%;
+                padding-left: 85px;
+            }
+        }
+    }
+    &__title{
+        @media (min-width: 1099px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__groups{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__group{
+        &-item{
+            margin-top: 12px;
+            text-transform: capitalize;
+            padding-right: 45px;
+            a{
+                color: $primaryDark;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+        }
+    }
+}

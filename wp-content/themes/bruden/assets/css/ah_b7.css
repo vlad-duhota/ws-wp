@@ -1,0 +1,49 @@
+.ah_b7 {
+  padding: 60px 0;
+  background-color: #0084CA;
+  color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  .ah_b7 {
+    padding: 120px 0;
+  }
+}
+.ah_b7_states {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-top: 40px;
+}
+.ah_b7_states_item {
+  width: calc(25% - 45px);
+}
+.ah_b7_states_item .state_name {
+  font-size: 19px;
+  margin: 0 0 10px;
+}
+.ah_b7_loc_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+}
+.ah_b7_loc_list_item {
+  width: calc(50% - 15px);
+}
+.ah_b7_loc_list_item a {
+  position: relative;
+}
+.ah_b7_loc_list_item a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width 0.3s;
+}
+.ah_b7_loc_list_item a:hover::after {
+  width: 100%;
+}
